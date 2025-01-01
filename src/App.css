@@ -1,0 +1,256 @@
+/*======== VARIABLES CSS ========*/
+:root {
+  --header-height: 4rem;
+
+  /*====== Colors ======*/
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-color: rgba(0, 0, 0, 0.3);
+  --scrollbar-thumb: #2c3e50;
+  --scrollbar-track: #ecf0f1;
+  --header-color: hsl(var(--hue), var(--sat), 95%);
+  --works-button-color: #363636;
+  --works-text-color: #d5d5d5;
+
+  /*===== Font & Typography ======*/
+  --body-font: 'BlinkMacSystemFont', sans-serif;
+
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /*======= Font Weight =======*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+
+  /*===== z-index =====*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* ======== DARK MODE VARIABLES ======== */
+body.dark-mode {
+  --hue: 240;
+  --sat: 20%;
+  --title-color: hsl(var(--hue), var(--sat), 90%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 80%);
+  --text-color: hsl(var(--hue), var(--sat), 70%);
+  --body-color: hsl(var(--hue), var(--sat), 10%);
+  --container-color: hsl(var(--hue), var(--sat), 15%);
+  --shadow-color: rgba(255, 255, 255, 0.1);
+  --border-color: rgba(238, 238, 238, 0.3);
+  --scrollbar-thumb: #d6d6d6;
+  --scrollbar-track: #222b33;
+  --header-color: hsl(var(--hue), var(--sat), 15%);
+  --works-button-color: #d5d5d5;
+  --works-text-color: #222;
+}
+
+/* ======== DARK MODE STYLES ======== */
+body.dark-mode {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: var(--title-color);
+}
+
+body.dark-mode .button {
+  background-color: var(--title-color-dark);
+}
+
+body.dark-mode .button:hover {
+  background-color: hsl(var(--hue), var(--sat), 80%);
+}
+
+
+/*======== Responsive Typography ==========*/
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem: --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color 0.6s ease, color 0.6s ease
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semibold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*!============== Reusable Classes ===================*/
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.button-icon {
+  margin-left: 0.5rem;
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ==============BREAKPOINTS================ */
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem;
+  }
+
+  .section-subtitle {
+    margin-bottom: 3rem;
+  }
+
+  .Toastify__toast-container {
+    width: 80% !important;
+    left: 10% !important;
+    right: 10% !important;
+    bottom: 10% !important;
+    height: 20px !important;
+  }
+
+  .Toastify__toast {
+    font-size: 14px !important;
+    padding: 12px !important;
+  }
+
+  .Toastify__progress-bar {
+    height: 3px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 350px) {
+
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
