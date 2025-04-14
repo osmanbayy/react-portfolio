@@ -48,7 +48,7 @@ export default function Header() {
             </li>
             <li className="nav-item">
               <i
-                className={`bx ${darkMode ? "bx-sun hide-icon" : "bx-moon"} theme-icon`}
+                className={`bx ${darkMode ? "bx-sun hide-icon" : "bx-moon hide-icon"} theme-icon`}
                 onClick={toggleDarkMode}
               ></i>
             </li>
