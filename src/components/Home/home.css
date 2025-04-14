@@ -62,7 +62,7 @@
 }
 
 .home-img {
-    background: url("../../assets/profile.jpg");
+    background: url("../../assets/profilee.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -72,6 +72,7 @@
     order: 1;
     justify-self: center;
     animation: profile-animate 8s ease-in-out infinite 1s;
+    filter: grayscale(50%)
 }
 
 @keyframes profile-animate {
