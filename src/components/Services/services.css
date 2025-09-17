@@ -9,6 +9,7 @@
     border: 1px solid var(--border-color);
     background-color: var(--container-color);
     padding: 6rem 0 2rem 2.5rem;
+    border-radius: 15px;
 }
 
 .services-icon {

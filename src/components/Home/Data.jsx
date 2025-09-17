@@ -53,7 +53,7 @@ export default function Data() {
           ></path>
         </svg>
       </h1>
-      <h3 className="home-subtitle">Full-Stack Developer</h3>
+      <h3 className="home-subtitle">Frontend Developer</h3>
       <p className="home-description">
         I&apos;m creative developer based in Istanbul, and I&apos;m very
         passionate and dedicated to my work.

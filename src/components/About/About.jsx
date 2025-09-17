@@ -1,6 +1,6 @@
 import "./about.css";
 import AboutImg from "../../assets/profilee.jpg";
-import CV from "../../assets/CV.pdf";
+import CV from "../../assets/cv2.pdf";
 import Info from "./Info";
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
         <div className="about-data">
           <Info />
           <p className="about-description">
-            Full Stack Developer, I create web pages with HTML, CSS and
+            Frontend Developer, I create web pages with HTML, CSS and
             JavaScript, I have years of experience and many clients are happy
             with the projects carried out.
           </p>

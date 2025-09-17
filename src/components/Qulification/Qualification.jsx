@@ -122,6 +122,23 @@ export default function Qualification() {
                 <span className="qualification-line"></span>
               </div>
             </div>
+
+            <div className="qualification-data">
+              <div></div>
+              <div>
+                <span className="qualification-rounder"></span>
+                <span className="qualification-line"></span>
+              </div>
+              <div>
+                <h3 className="qualification-title">
+                  Frontend Developer Intern / <b>Jotform</b>
+                </h3>
+
+                <div className="qualification-calendar">
+                  <i className="uil uil-calendar-alt"></i> 2025
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
